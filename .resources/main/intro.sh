@@ -37,22 +37,13 @@ case $opt in
         bash rank05_menu.sh
         ;;
     6)
-        bash rank06_menu.sh
-        ;;
-    7)
         cd ../../rendu
-        if command -v xdg-open &> /dev/null; then
-            xdg-open .
-        elif command -v open &> /dev/null; then
-            open .
-        else
-            echo "Current directory: $(pwd)"
-        fi
+        open .
         cd ../.resources/main
         bash menu.sh
         exit 1
         ;;
-    8)
+    7)
         cd ../../
         bash update.sh
         ;;
@@ -65,7 +56,7 @@ case $opt in
         ;;
     
     *)
-        echo "Invalid choice. Please enter a number from 1 to 7."
+        echo "Invalid choice. Please enter a number from 1 to 6."
         sleep 1
         clear
         bash menu.sh
