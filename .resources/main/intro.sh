@@ -37,7 +37,11 @@ case $opt in
         ;;
     6)
         cd ../../rendu
-        open .
+        if [ -n "$WSL_DISTRO_NAME" ]; then
+            explorer.exe .
+        else
+            open .
+        fi
         cd ../.resources/main
         bash menu.sh
         exit 1
