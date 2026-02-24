@@ -1,10 +1,8 @@
-Assignement name : n_queens
-
+Assignment name : n_queens
 Expected files : *.c *.h
-
-Allowed functions : atoi, fprintf, write, calloc, malloc, free, realloc, stdout, stderr
-
--------------------------------------------------------------------------
+Allowed functions : atoi, fprintf, write, calloc, malloc, free, realloc,
+stdout, stderr
+--------------------------------------------------------------------------------
 
 Write a program that will print all the solutions to the n queens problem
 for a n given as argument.
