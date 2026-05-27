@@ -2,8 +2,7 @@
 #include <stdbool.h>
 #include <ctype.h>
 #include <string.h>
-#include <stdlib.h> // change this to <stdlib.h>
-
+#include <stdlib.h>
 
 typedef struct	json {
 	enum {

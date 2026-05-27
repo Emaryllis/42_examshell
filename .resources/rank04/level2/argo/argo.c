@@ -206,7 +206,6 @@ int parse_map(json *dst, FILE *stream)
 	return 1;
 }
 
-
 int parser(json *dst, FILE *stream)
 {
 	int c = peek(stream);
@@ -260,4 +259,3 @@ int	main(int argc, char **argv)
 	serialize(file);
 	printf("\n");
 }
-

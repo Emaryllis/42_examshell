@@ -13,8 +13,6 @@ typedef struct node {
     struct node *r;
 }   node;
 
-
-
 node    *new_node(node n)
 {
     node *ret = calloc(1, sizeof(n));
@@ -35,9 +33,6 @@ void    destroy_tree(node *n)
     }
     free(n);
 }
-
-
-
 
 void    unexpected(char c)
 {
@@ -71,7 +66,6 @@ int      check_balance(char *s);
 node    *parse_number_or_group(char **s);
 node    *parse_addition(char **s);
 node    *parse_multiplication(char **s);
-
 
 node    *parse_number_or_group(char **s)
 {
@@ -130,7 +124,6 @@ node    *parse_addition(char **s)
     return (left);
 }
 
-
 node    *parse_multiplication(char **s)
 {
     node    *left;
@@ -156,7 +149,6 @@ node    *parse_multiplication(char **s)
     }
     return (left);
 }
-
 
 int check_balance(char *s)
 {
