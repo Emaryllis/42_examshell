@@ -12,12 +12,13 @@ printf "${YELLOW}${BOLD}%s${RESET}\n" "🚀 2. Exam Rank 02"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📋 3. Exam Rank 03"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 4. Exam Rank 04"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 5. Exam Rank 05"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📁 6. Open Rendu Folder"
-#printf "${YELLOW}${BOLD}%s${RESET}\n" "6. Update Shell"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📄  6. Exam Rank 06"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📁 7. Open Rendu Folder"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "8. Update ExamShell"
 printf "${GREEN}%s${RESET}\n"  "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆"
 printf "${BLUE}%s${RESET}\n" "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓"
 printf "${CYAN}%s${RESET}\n" "╚═══════════════════════════════════════════════════════════╝"
-printf "${GREEN}${BOLD}Enter your choice (1-5): ${RESET}"
+printf "${GREEN}${BOLD}Enter your choice (1-7): ${RESET}"
 read opt
 case $opt in
     1)
@@ -36,6 +37,9 @@ case $opt in
         bash rank05_menu.sh
         ;;
     6)
+        bash rank06_menu.sh
+        ;;
+    7)
         cd ../../rendu
         if [ -n "$WSL_DISTRO_NAME" ]; then
             explorer.exe .
@@ -46,7 +50,7 @@ case $opt in
         bash menu.sh
         exit 1
         ;;
-    7)
+    8)
         cd ../../
         bash update.sh
         ;;
@@ -59,7 +63,7 @@ case $opt in
         ;;
     
     *)
-        echo "Invalid choice. Please enter a number from 1 to 6."
+        echo "Invalid choice. Please enter a number from 1 to 7."
         sleep 1
         clear
         bash menu.sh
