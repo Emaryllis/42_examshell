@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <ctype.h>
 
-
 void unexpected(char c);
 int ft_factor();
 int ft_product();
