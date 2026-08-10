@@ -22,26 +22,26 @@ each cell outside of the array will be considered dead
 Example:
 $> echo 'sdxddssaaww' | ./a.out 5 5 0 | cat -e
      $
- 000 $
- 0 0 $
- 000 $
+ OOO $
+ O O $
+ OOO $
      $
 $> echo 'sdxssdswdxdddxsaddawxwdxwaa' | ./a.out 10 6 0 | cat -e
           $
- 0   000  $
- 0     0  $
- 000  0   $
-  0  000  $
+ O   OOO  $
+ O     O  $
+ OOO  O   $
+  O  OOO  $
           $
 $> echo 'dxss' | ./a.out 3 3 0 | cat -e
- 0 $
- 0 $
- 0 $
+ O $
+ O $
+ O $
 $> echo 'dxss' | ./a.out 3 3 1 | cat -e
    $
-000$
+OOO$
    $
 $> echo 'dxss' | ./a.out 3 3 2 | cat -e
- 0 $
- 0 $
- 0 $
+ O $
+ O $
+ O $
