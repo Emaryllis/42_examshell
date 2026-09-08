@@ -12,7 +12,7 @@ printf "${YELLOW}${BOLD}%s${RESET}\n" "🚀 2. Exam Rank 02"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📋 3. Exam Rank 03"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 4. Exam Rank 04"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 5. Exam Rank 05"
-printf "${YELLOW}${BOLD}%s${RESET}\n" "📄  6. Exam Rank 06"
+printf "${YELLOW}${BOLD}%s${RESET}\n" "📄 6. Exam Rank 06"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "📁 7. Open Rendu Folder"
 printf "${YELLOW}${BOLD}%s${RESET}\n" "8. Update ExamShell"
 printf "${GREEN}%s${RESET}\n"  "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆"
@@ -37,9 +37,6 @@ case $opt in
         bash rank05_menu.sh
         ;;
     6)
-        bash rank06_menu.sh
-        ;;
-    7)
         cd ../../rendu
         if [ -n "$WSL_DISTRO_NAME" ]; then
             explorer.exe .
@@ -50,7 +47,7 @@ case $opt in
         bash menu.sh
         exit 1
         ;;
-    8)
+    7)
         cd ../../
         bash update.sh
         ;;
@@ -63,7 +60,7 @@ case $opt in
         ;;
     
     *)
-        echo "Invalid choice. Please enter a number from 1 to 7."
+        echo "Invalid choice. Please enter a number from 1 to 6."
         sleep 1
         clear
         bash menu.sh
